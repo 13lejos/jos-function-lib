@@ -5,28 +5,42 @@
   <title>Page Title</title>
 </head>
 <body>
+
+  <h1>
+    THE TITLE OF YOUR WEBPAGE
+  </h1>
+  <div id="container"></div>
+
   <script>
     // Your JavaScript goes here!
 
 
+const container = document.querySelector('#container');
+const content = document.createElement('div');
+content.classList.add('contentBox');
+container.style.backgroundColor = 'pink';
+container.style.border = "thick solid #0000FF";
+content.textContent = 'test';
 
+container.appendChild(content);
 
+const imDiv = document.createElement('h1');
+imDiv.className = 'imDiv';
+imDiv.textContent = "I'm a div too";
 
-    function addPercentage (number, a)
-{
-    const percentageAdded = number + ((a/100) * number)
-    return percentageAdded
-}
+container.appendChild(imDiv);
 
+const meToo = document.createElement('p');
+meToo.className = 'meToo';
+meToo.textContent = "me too!"
 
-
-
-
+container.appendChild(meToo);
 
 
   // BOUNDARIES BOUNDARIES BOUNDARIES BOUNDARIES //
   </script>
 
   <h1></h1>
+  
 </body>
 </html>
